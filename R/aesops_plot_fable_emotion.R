@@ -17,12 +17,20 @@
 #'
 #' @seealso
 #' \code{\link{aesops_plot_fable_emotion_norm}}
-#'
 #' @examples
-#' aesops_plot_fable_emotion("075")
-#'
+#' if (requireNamespace("textdata", quietly = TRUE)) {
+#'   aesops_plot_fable_emotion("075")
+#' }
 #' @export
 aesops_plot_fable_emotion <- function(fable_id) {
+
+  if (!requireNamespace("textdata", quietly = TRUE)) {
+    stop(
+      "The textdata package is required to use NRC emotion lexicons.\n",
+      "Install it with install.packages('textdata').",
+      call. = FALSE
+    )
+  }
 
   title =
     aesops_fables |>

@@ -25,8 +25,9 @@ The plot uses the NRC sentiment lexicon and excludes the
 discrete emotional dimensions (e.g., joy, fear, trust).
 }
 \examples{
-aesops_plot_fable_emotion("075")
-
+if (requireNamespace("textdata", quietly = TRUE)) {
+  aesops_plot_fable_emotion("075")
+}
 }
 \seealso{
 \code{\link{aesops_plot_fable_emotion_norm}}
