@@ -9,9 +9,9 @@
 #' @format A tibble with one row per word token and the following variables:
 #' \describe{
 #'   \item{fable_id}{Character string identifying the source fable.}
+#'   \item{title}{Title of the fable}
+#'   \item{moral}{The moral or lesson associated with the fable.}
 #'   \item{word}{Lowercase word token extracted from the fable text.}
-#'   \item{word_count}{Total number of words in the source fable.}
-#'   \item{source_url}{URL of the original fable text.}
 #' }
 #'
 #' @details

@@ -43,13 +43,13 @@ A dataset containing 147 of Aesop's Fables retrieved from the
 Library of Congress public domain collection.
 }
 \details{
-Each row represents a single fable and includes metadata,
-the full narrative text, and the associated moral.
+Each row represents a single fable and includes metadata, the full narrative
+text, and the associated moral.
 
 
-The texts were scraped from \url{https://read.gov/aesop/} and are
-believed to be in the public domain. Text has been minimally cleaned
-to preserve original phrasing and narrative structure.
+The texts were scraped from \url{https://read.gov/aesop/} and are believed to
+be in the public domain. Text has been minimally cleaned to preserve original
+phrasing and narrative structure.
 
 Each row represents a single fable and includes metadata,
 the full narrative text, and the associated moral.
@@ -62,9 +62,11 @@ to preserve original phrasing and narrative structure.
 \examples{
 aesops_fables
 
-aesops_fables |>
-  dplyr::filter(fable_id == "075") |>
-  dplyr::select(title, moral)
+if (requireNamespace("dplyr", quietly = TRUE)) {
+  aesops_fables |>
+    dplyr::filter(fable_id == "075") |>
+    dplyr::select(title, moral)
+}
 
 aesops_fables
 

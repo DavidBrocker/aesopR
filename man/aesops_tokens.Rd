@@ -16,9 +16,9 @@ A tibble with one row per word token and the following variables:
 A tibble with one row per word token and the following variables:
 \describe{
   \item{fable_id}{Character string identifying the source fable.}
+  \item{title}{Title of the fable}
+  \item{moral}{The moral or lesson associated with the fable.}
   \item{word}{Lowercase word token extracted from the fable text.}
-  \item{word_count}{Total number of words in the source fable.}
-  \item{source_url}{URL of the original fable text.}
 }
 }
 \usage{
@@ -27,20 +27,20 @@ aesops_tokens
 aesops_tokens
 }
 \description{
-A tidy token-level dataset derived from \link[aesopR]{aesops_fables},
-where each row represents a single word token from a fable.
+A tidy token-level dataset derived from \link[aesopR]{aesops_fables}, where
+each row represents a single word token from a fable.
 
 A tidy token-level dataset derived from \code{aesops_fables},
 where each row represents a single word token from a fable.
 }
 \details{
-This dataset is intended for text analysis tasks such as
-sentiment analysis, n-gram modeling, and word frequency analysis.
+This dataset is intended for text analysis tasks such as sentiment analysis,
+n-gram modeling, and word frequency analysis.
 
 
 Tokens were generated using \code{tidytext::unnest_tokens()}.
-Stop words have not been removed, allowing users full flexibility
-in preprocessing decisions.
+Stop words have not been removed, allowing users full flexibility in
+preprocessing decisions.
 
 This dataset is intended for text analysis tasks such as
 sentiment analysis, n-gram modeling, and word frequency analysis.
@@ -53,8 +53,10 @@ in preprocessing decisions.
 \examples{
 aesops_tokens
 
-aesops_tokens |>
-  dplyr::count(word, sort = TRUE)
+if (requireNamespace("dplyr", quietly = TRUE)) {
+  aesops_tokens |>
+    dplyr::count(word, sort = TRUE)
+}
 
 aesops_tokens
 

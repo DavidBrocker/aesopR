@@ -6,46 +6,33 @@
 \alias{aesopR-package}
 \title{aesopR: Text Analysis of Aesop's Fables}
 \description{
-\link[aesopR]{aesopR} provides a tidy text corpus of Aesop's Fables sourced
-from the Library of Congress, along with tools for exploring emotion,
-sentiment, and linguistic patterns in moral storytelling.
+\pkg{aesopR} provides a tidy text corpus of Aesop's Fables sourced
+from the Library of Congress, along with analysis-ready datasets for
+exploring sentiment, emotion, and linguistic patterns in moral storytelling.
 }
 \details{
-The package is designed for teaching, research, and exploratory
-text analysis, offering both raw narrative texts and analysis-ready
-tokenized data structures.
+The package is designed for teaching, research, and exploratory text analysis,
+offering both raw narrative texts and tokenized data structures. It also
+includes pre-joined sentiment datasets based on widely used lexicons to
+support reproducible workflows without requiring interactive downloads.
 
 Core features include:
 \itemize{
   \item A curated public-domain corpus of 147 Aesop's Fables
   \item Tidy tokenized representations for NLP workflows
-  \item Sentiment and emotion analysis using established lexicons
-  \item Visualization tools for comparing emotional structure within
-  and across fables
+  \item Pre-joined sentiment datasets using established lexicons (Bing, AFINN)
 }
-
-The package emphasizes transparency and flexibility, allowing users
-to apply their own preprocessing and analytic decisions while
-providing convenient defaults for common workflows.
 }
 \section{Datasets}{
 
 \itemize{
   \item \link[aesopR]{aesops_fables}: Full fable texts and metadata
   \item \link[aesopR]{aesops_tokens}: Tokenized corpus for text analysis
-}
-}
-
-\section{Visualization Functions}{
-
-\itemize{
-  \item \link[aesopR]{aesops_plot_fable_emotion}: Emotion distribution
-  for a single fable
-  \item \link[aesopR]{aesops_plot_fable_emotion_norm}: Normalized emotion
-  distribution for a single fable
+  \item \link[aesopR]{aesops_afinn}: Tokens joined with AFINN sentiment scores
+  \item \link[aesopR]{aesops_bing}: Tokens joined with Bing sentiment labels
 }
 }
 
 \author{
-David Brocker
+Dave Brocker
 }

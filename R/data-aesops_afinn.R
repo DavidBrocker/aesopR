@@ -1,0 +1,35 @@
+#' Aesop's Fables Tokens with AFINN Sentiment Scores
+#'
+#' A token-level dataset of Aesop's Fables joined with the AFINN sentiment
+#' lexicon. Each row represents a word from a fable that appears in the
+#' AFINN lexicon, along with its associated numeric sentiment score.
+#'
+#' The AFINN lexicon assigns integer sentiment values ranging from
+#' negative to positive polarity, making this dataset well-suited for
+#' aggregated sentiment scoring and comparative analyses across fables.
+#'
+#' @format A tibble with one row per token and sentiment match, containing:
+#' \describe{
+#'   \item{fable_id}{Character identifier for the fable}
+#'   \item{title}{Title of the fable}
+#'   \item{moral}{The moral or lesson associated with the fable.}
+#'   \item{word}{Tokenized word from the fable text}
+#'   \item{value}{AFINN sentiment score}
+#' }
+#'
+#' @source
+#' AFINN sentiment lexicon by Finn Årup Nielsen (2011).
+#'
+#' @references
+#' Nielsen, F. Å. (2011). *A new ANEW: Evaluation of a word list for sentiment
+#' analysis in microblogs*. Proceedings of the ESWC Workshop on Making Sense
+#' of Microposts.
+#'
+#' @seealso
+#' \code{\link{aesops_tokens}}
+#'
+#' @usage data(aesops_afinn)
+#'
+#' @docType data
+#' @keywords datasets
+"aesops_afinn"
