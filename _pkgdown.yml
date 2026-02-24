@@ -1,0 +1,45 @@
+url: https://davidbrocker.github.io/aesopR/
+template:
+  bootstrap: 5
+
+home:
+  title: aesopR
+  description: >
+    A tidy, public-domain corpus of Aesop's Fables with analysis-ready token and sentiment datasets.
+  links:
+    - text: Browse the data
+      href: reference/index.html
+    - text: Source (Library of Congress)
+      href: https://read.gov/aesop/
+
+navbar:
+  structure:
+    left:  [home, intro, articles, reference, news]
+    right: [github]
+  components:
+    intro:
+      text: Get started
+      href: articles/aesopR.html
+    articles:
+      text: Articles
+      menu:
+        - text: "1. Getting started"
+          href: articles/aesopR.html
+        - text: "2. Classroom activities"
+          href: articles/classroom.html
+        - text: "3. Sentiment workflows (Bing & AFINN)"
+          href: articles/sentiment.html
+    github:
+      icon: fa-github
+      href: https://github.com/DavidBrocker/aesopR
+
+reference:
+  - title: Datasets
+    contents:
+      - aesops_fables
+      - aesops_tokens
+      - aesops_bing
+      - aesops_afinn
+
+news:
+  one_page: true

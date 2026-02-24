@@ -26,7 +26,7 @@
 #'
 #' @author
 #' Dave Brocker
-#'
+#' @keywords internal
 "_PACKAGE"
 
 

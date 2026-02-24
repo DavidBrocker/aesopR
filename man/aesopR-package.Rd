@@ -33,6 +33,14 @@ Core features include:
 }
 }
 
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://davidbrocker.github.io/aesopR/}
+}
+
+}
 \author{
 Dave Brocker
 }
+\keyword{internal}
