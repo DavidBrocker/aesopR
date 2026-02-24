@@ -101,9 +101,17 @@ All texts are believed to be in the public domain.
 ## Why aesopR?
 
 Many NLP examples rely on song lyrics or copyrighted material. aesopR
-provides a fully public-domain corpus suitable for: • Classroom
-demonstrations • Methods courses • Sentiment tutorials • Research
-reproducibility • Package examples
+provides a fully public-domain corpus suitable for:
+
+- Classroom demonstrations
+
+- Methods courses
+
+- Sentiment tutorials
+
+- Research reproducibility
+
+- Package examples
 
 License
 
