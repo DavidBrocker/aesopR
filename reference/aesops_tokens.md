@@ -58,18 +58,16 @@ A tibble with one row per word token and the following variables:
 This dataset is intended for text analysis tasks such as sentiment
 analysis, n-gram modeling, and word frequency analysis.
 
-Tokens were generated using
-[`tidytext::unnest_tokens()`](https://juliasilge.github.io/tidytext/reference/unnest_tokens.html).
-Stop words have not been removed, allowing users full flexibility in
-preprocessing decisions.
+Tokens were generated using `tidytext::unnest_tokens()`. Stop words have
+not been removed, allowing users full flexibility in preprocessing
+decisions.
 
 This dataset is intended for text analysis tasks such as sentiment
 analysis, n-gram modeling, and word frequency analysis.
 
-Tokens were generated using
-[`tidytext::unnest_tokens()`](https://juliasilge.github.io/tidytext/reference/unnest_tokens.html).
-Stop words have not been removed, allowing users full flexibility in
-preprocessing decisions.
+Tokens were generated using `tidytext::unnest_tokens()`. Stop words have
+not been removed, allowing users full flexibility in preprocessing
+decisions.
 
 ## See also
 

@@ -35,7 +35,7 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item"><a class="nav-link" href="../articles/aesopR.html">Get started</a></li>
-<li class="nav-item dropdown">
+<li class="active nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
 <li><a class="dropdown-item" href="../articles/aesopR.html">1. Getting started</a></li>
@@ -192,7 +192,7 @@ textdata.</p>
 <span>  <span class="co"># e.g., "loughran" is available via tidytext::get_sentiments() </span></span>
 <span>  <span class="co"># (designed for financial     contexts; included here to illustrate extension) </span></span>
 <span></span>
-<span><span class="va">lex</span> <span class="op">&lt;-</span> <span class="fu">tidytext</span><span class="fu">::</span><span class="fu"><a href="https://juliasilge.github.io/tidytext/reference/get_sentiments.html" class="external-link">get_sentiments</a></span><span class="op">(</span><span class="st">"loughran"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span><span class="va">lex</span> <span class="op">&lt;-</span> <span class="fu">tidytext</span><span class="fu">::</span><span class="fu">get_sentiments</span><span class="op">(</span><span class="st">"loughran"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">lex</span><span class="op">)</span> </span>
 <span><span class="op">}</span></span></code></pre>
 <p>If you plan to use lexicons that download through textdata, consider
