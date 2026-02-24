@@ -1,5 +1,5 @@
 
-<img src="man/figures/logo.png" align="right" height="120" alt=""/>
+<img src="man/figures/logo.png" align="right" height="120"/>
 
 <!-- badges: start -->
 
@@ -7,6 +7,7 @@
 Badge](https://www.r-pkg.org/badges/version/aesopR)](https://cran.r-project.org/package=aesopR)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
+
 <!-- badges: end -->
 
 ## Overview
@@ -100,9 +101,17 @@ All texts are believed to be in the public domain.
 ## Why aesopR?
 
 Many NLP examples rely on song lyrics or copyrighted material. aesopR
-provides a fully public-domain corpus suitable for: • Classroom
-demonstrations • Methods courses • Sentiment tutorials • Research
-reproducibility • Package examples
+provides a fully public-domain corpus suitable for:
+
+- Classroom demonstrations
+
+- Methods courses
+
+- Sentiment tutorials
+
+- Research reproducibility
+
+- Package examples
 
 License
 
